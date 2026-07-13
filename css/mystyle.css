@@ -1,0 +1,315 @@
+@charset "utf-8";
+h1{
+    color: #fff;
+    background-color: #e0bd97;
+    border-radius: 15px;
+    padding: 10px;
+    text-align: center;
+    font-size: 260%;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+.welcome{
+    color: #fff;
+    background-color: #e0bd97;
+    font-size: 300%;
+    font-weight: bold;
+    border-radius: 15px;
+    padding: 10px;
+    text-align: center;
+}
+body{
+    margin:0;
+    background-color:#ffffff;
+    color:#333333;
+    font-family:"Yu Gothic UI","メイリオ","Hiragino Maru Gothic ProN",sans-serif;
+    line-height:1.8;
+}
+p{
+	font-size: 90%;
+}
+h2{
+	font-size: 120%;
+}
+footer{
+	text-align: center;
+}
+.hero{
+    position:relative;
+    height:500px;
+    overflow:hidden;
+    width:90%;
+    max-width:1200px;
+    margin:15px auto 0 auto;
+    border-radius:20px;
+}
+.hero img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    border-radius:0 0 20px 20px;
+}
+.hero::before{
+    content:"";
+    position:absolute;
+    inset:0;
+}
+.catch{
+    position:absolute;
+    top:30px;
+    left:30px;
+    color:white;
+    z-index:1;
+}
+
+.catch h1{
+    background:none;
+    color:white;
+    padding:0;
+    border-radius:0;
+    text-shadow:3px 3px 8px rgba(0,0,0,0.7);
+}
+.catch p{
+    font-size:140%;
+    text-shadow:2px 2px 8px rgba(0,0,0,.5);
+}
+.topbar{
+    background-color:#edc389f0;
+    color:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 40px;
+    border-radius:20px;
+}
+.logo{
+    color:white;
+    font-size:32px;
+    font-weight:bold;
+}
+.topbar ul{
+    list-style:none;
+    display:flex;
+    gap:30px;
+    margin:0;
+    padding:0;
+}
+
+.topbar a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+}
+.topbar li{
+    border-right:1px solid rgba(255,255,255,0.5);
+    padding-right:15px;
+}
+.topbar li:last-child{
+    border-right:none;
+}
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:20px auto;
+}
+nav li:hover{
+    opacity: 0.7;
+}
+@media(max-width:600px){
+.catch{
+    top:50px;
+    left:50px;
+}
+.catch h1{
+    font-size:350%;
+}
+.catch p{
+    font-size:100%;
+}
+}
+.logo img{
+    height:90px;
+    width:auto;
+    display:block;
+}
+.news{
+    width:85%;
+    margin:40px auto;
+}
+.news h2{
+    color:#e67e22;
+    font-size:200%;
+    font-weight:bold;
+    border-left:8px solid #e67e22;
+    padding-left:15px;
+    margin-bottom:20px;
+}
+.news ul{
+    list-style:none;
+    padding:0;
+}
+.news li{
+    background:#fffaf3;
+    border-radius:15px;
+    padding:15px 20px;
+    margin-bottom:12px;
+    box-shadow:0 3px 10px rgba(0,0,0,0.08);
+}
+.news time{
+    display:inline-block;
+    background:#edc389f0;
+    color:white;
+    border-radius:20px;
+    padding:4px 12px;
+    margin-right:12px;
+    font-weight:bold;
+}
+.point-list{
+    list-style-image:url("../image/pot.png");
+    margin-left:25px;
+}
+.point-img{
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    float:left;
+    margin-right:20px;
+    margin-bottom:10px;
+}
+section{
+    background:#fff;
+    padding:20px;
+    margin:30px 0;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.15);
+}
+.recipe{
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+}
+.recipe-text{
+    flex: 1;
+}
+@media(max-width:700px){
+.recipe{
+    flex-direction: column;
+}
+.point-img{
+    width:100%;
+    height:auto;
+}
+}
+.sub-h1{
+    background: linear-gradient(to right, #e0bd97 0%, #f3e4d3 60%, #ffffff 100%);
+    color: #ffffff;
+    text-align: left;
+    padding: 12px 20px;
+    border-radius: 15px;
+    font-size: 260%;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+.breadcrumb li{
+    display:inline;
+}
+.clear{
+    clear:both;
+}
+a:link{
+    color:#ffffff;
+}
+a:visited{
+    color:#be4e03;
+}
+a:hover{
+    color:#ffe8b3;
+}
+a:active{
+    color:#ff9900;
+}
+a:link{
+    color:#ffffff;
+}
+a:visited{
+    color:#be4e03;
+}
+a:hover{
+    color:#ffe8b3;
+}
+a:active{
+    color:#ff9900;
+}
+.mokuji a:link{
+    color:#e67e22;
+    text-decoration:none;
+}
+.mokuji a:visited{
+    color:#c45a00;
+}
+.mokuji a:hover{
+    color:#ff9900;
+    text-decoration:underline;
+}
+.mokuji a:active{
+    color:#d35400;
+}
+.sentou{
+    text-align:right;
+}
+.sentou a:link{
+    color:#e67e22;
+    text-decoration:none;
+    font-weight:bold;
+}
+.sentou a:visited{
+    color:#c45a00;
+}
+.sentou a:hover{
+    color:#ff9900;
+    text-decoration:underline;
+}
+.sentou a:active{
+    color:#d35400;
+}
+form{
+    width:80%;
+    max-width:700px;
+    margin:30px auto;
+}
+input[type="text"],
+input[type="email"],
+textarea{
+    width:100%;
+    padding:10px;
+    border:1px solid #ccc;
+    border-radius:8px;
+    box-sizing:border-box;
+}
+input[type="submit"]{
+    background:#e0bd97;
+    color:white;
+    border:none;
+    padding:10px 25px;
+    border-radius:10px;
+    cursor:pointer;
+}
+input[type="submit"]:hover{
+    background:#d89f63;
+}
+@media print{
+.topbar{
+    display:none;
+}
+.hero{
+    height:auto;
+}
+.hero img{
+    height:auto;
+}
+footer{
+    display:none;
+}
+}
